@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.top-image img {
+    width: 100%;
+    height: auto;
+}
+
+.message-section {
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.message-block {
+    padding: 20px;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+    background-color: #fafafa;
+    opacity: 0;  /* 追加 */
+    transition: opacity 0.5s;  /* 追加 */
+}
+
+.slideDown {
+    animation: slideDown 1s ease-out forwards;  /* 追加 */
+}
+
+.image-link-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-link-item {
+    flex-basis: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-link-item img {
+    width: 100%;
+    height: auto;
+}
+
+.image-link-item a {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/* ヘッダー */
+
+header {
+    position: fixed; /* 位置を固定 */
+    top: 0; /* 画面の一番上に位置させる */
+    width: 100%; /* ブロック全体をカバー */
+    background-color: #f0f0f0; /* 任意の色に変更 */
+    z-index: 1; /* 他の要素の上に表示 */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.site-header {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    right: 20px;
+    top: 20px;
+    position: fixed;
+}
+
+.menu-icon span {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #333;
+}
+
+
+/* サイドナビ */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/* フッター */
+.site-footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.site-footer img {
+    width: 100px;
+    height: auto;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    .image-link-section {
+        flex-direction: column;
+    }
+
+    .image-link-item {
+        flex-basis: 100%;
+    }
+}
+
+
+/* サイドナビ開いた時のオーバーレイ */
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
