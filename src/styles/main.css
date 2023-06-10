@@ -1,185 +1,160 @@
 body {
-    font-family: Arial, sans-serif;
-}
-
-.top-image img {
-    width: 100%;
-    height: auto;
-}
-
-.message-section {
-    padding: 20px;
-    text-align: center;
-}
-
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.message-block {
-    padding: 20px;
-    border: 1px solid #ddd;
-    font-size: 1.2em;
-    background-color: #fafafa;
-    opacity: 0;  /* 追加 */
-    transition: opacity 0.5s;  /* 追加 */
-}
-
-.slideDown {
-    animation: slideDown 1s ease-out forwards;  /* 追加 */
-}
-
-.image-link-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.image-link-item {
-    flex-basis: 30%;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.image-link-item img {
-    width: 100%;
-    height: auto;
-}
-
-.image-link-item a {
-    display: block;
-    margin-top: 10px;
-    color: #000;
-    text-decoration: none;
-}
-
-
-
-
-/* ヘッダー */
-
-header {
-    position: fixed; /* 位置を固定 */
-    top: 0; /* 画面の一番上に位置させる */
-    width: 100%; /* ブロック全体をカバー */
-    background-color: #f0f0f0; /* 任意の色に変更 */
-    z-index: 1; /* 他の要素の上に表示 */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.site-header {
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-icon {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    right: 20px;
-    top: 20px;
-    position: fixed;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
 }
 
-.menu-icon span {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: #333;
+header, main, footer {
+    width: 80%;
+    margin: 20px auto;
 }
+
 
 
 /* サイドナビ */
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
+nav a {
+    margin-right: 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+nav a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+nav a:hover {
+    color: gold;
 }
 
+.gold-color {
+    color: gold;
+}
+
+
+.hamburger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* ストーリー */
+#story p {
+    font-size: calc(18px / 5);
+}
 
 
 /* フッター */
-.site-footer {
-    padding: 20px;
-    background-color: #f8f9fa;
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
     text-align: center;
 }
 
-.site-footer img {
-    width: 100px;
+
+/* イメージ */
+
+.img-responsive {
+    width: 100%;
     height: auto;
 }
 
-/* レスポンシブデザイン */
-@media (max-width: 600px) {
-    .image-link-section {
-        flex-direction: column;
-    }
 
-    .image-link-item {
-        flex-basis: 100%;
+.top-image img {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 20px solid white;
+}
+
+.center-image {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .top-image img, .center-image img {
+        width: 100%;
+        height: auto;
     }
 }
 
 
-/* サイドナビ開いた時のオーバーレイ */
-#overlay {
-    position: fixed;
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* タブレット向けのスタイル */
+}
+
+/* 通常サイズの時にはナビゲーションを表示する */
+#mobile-nav {
+    display: block;
+}
+
+/* スマホサイズの時にはナビゲーションを非表示にし、ハンバーガーメニューを表示する */
+@media only screen and (max-width: 768px) {
+    #hamburger-icon {
+        display: block;
+    }
+    #mobile-nav {
+        display: none;
+    }
+}
+
+
+/* 通常サイズの時にはハンバーガーメニューを非表示にする */
+#hamburger-menu {
     display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
 }
+
+/* スマホサイズの時にはハンバーガーメニューを表示する */
+@media only screen and (max-width: 768px) {
+    #hamburger-menu {
+        display: flex;
+    }
+}
+
+
+/* ハンバーガーメニューのスタイル */
+#hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px; /* ここは適切なサイズに調整してください */
+}
+
+#hamburger-menu .bars span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: #333;
+}
+
+#hamburger-menu #menu-text {
+    font-size: 18px;
+    color: #333;
+}
+
+

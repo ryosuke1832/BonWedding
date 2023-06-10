@@ -1,85 +1,63 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/styles/main.css">
+
 </head>
 <body>
 
-    <!-- サイドメニュー -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <a href="#section1">席次表</a>
-        <a href="#section2">アルバム</a>
-        <a href="#section3">二次会情報</a>
-        <a href="#section4">シドニー情報</a>
-    </div>
+    <header>
 
-    <div id="main-content">
+        <img src="src/assets/images/hedder.png" alt="header Image" class="img-responsive">
+        <h1>Satoshi</h1>
+        <h2>And</h2>
+        <h1>Mari</h1>
 
-        <!-- ヘッダー -->
-        <header>
-            <nav>
-                <div class="menu-icon">
-                    <span></span>  <!-- 追加 -->
-                    <span></span>
-                    <span></span>  <!-- 追加 -->
-                </div>
-                <p>ここに一文記載</p>
-            </nav>
-        </header>
+        <!-- ハンバーガーメニューのアイコン -->
+        <div id="hamburger-menu">
+            <div class="bars">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <span id="menu-text">Menu</span>
+        </div>
 
 
-        <!-- トップ画像 -->
+
+        <nav id="mobile-nav">
+            <a href="#home" class="gold-color">Home</a>
+            <a href="#table">席次表</a>
+            <a href="#album">アルバム</a>
+            <a href="#sydney">シドニー情報</a>
+            <a href="#video">動画</a>
+        </nav>
+
+    </header>
+
+    <main>
         <div class="top-image">
-            <img src="src/assets/images/top_image1.jpg" alt="Top Image">
+            <img src="src/assets/images/IMG_7469.jpg" alt="Main Image" class="img-responsive">
         </div>
-
-        <!-- 感謝のメッセージ -->
-        <div class="message-section">
-            <div class="message-block">
-                <p>ここに長文の感謝の言葉を記載します。</p>
-            </div>
-        </div>
-
-        <!-- イメージとリンクのセクション -->
-        <section class="image-link-section">
-            <!-- イメージとリンクのアイテム 1 -->
-            <div class="image-link-item">
-                <img src="src/assets/images/image1.jpg" alt="Image 1">
-                <a href="#">席次表へのリンク</a>
-            </div>
-
-            <!-- イメージとリンクのアイテム 2 -->
-            <div class="image-link-item">
-                <img src="src/assets/images/image2.jpg" alt="Image 2">
-                <a href="#">アルバムへのリンク</a>
-            </div>
-
-            <!-- イメージとリンクのアイテム 3 -->
-            <div class="image-link-item">
-                <img src="src/assets/images/image3.jpg" alt="Image 3">
-                <a href="#">他のページへのリンク</a>
-            </div>
+        <section id="date">
+            <h2>Please join us for our wedding celebration on</h2>
+            <h3>OCTOBER 24, 2024</h3>
         </section>
+        <section id="story">
+            <img src="src/assets/images/center.jpg" alt="center Image" class="center-image">
+            <h2>OUR STORY</h2>
+            <p>Cecilia and Oliver met in 2009 during senior year of high school, during an Intro to Photography class. Students were assigned a project that required them to shoot architectural buildings throughout San Francisco. One afternoon, they ran into each other on the street - they were photographing the same building, just from different vantage points! - and decided to shoot together. The afternoon turned to evening and ended with ice cream, where they talked until the shop closed. And the rest, as they say, is history. </p>
+        </section>
+    </main>
 
-
-
-        <!-- フッター -->
-        <footer class="site-footer">
-            <img src="src/assets/images/logo.jpg" alt="FooterLogo">
-        </footer>
-
-    </div>
-
-    <div id="overlay"></div>
-
-
-
-    <script src="src/scripts/main.js"></script>
-
+    <footer>
+        <img src="src/assets/images/footer.jpg" alt="footer Image" class="img-responsive">
+        <div id="logo"><!-- ロゴや社名 -->
+            <p>Your Logo or Company Name</p>
+        </div>
+    </footer>
 </body>
+<script src="src/scripts/main.js"></script>
 </html>
-
