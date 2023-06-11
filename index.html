@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Wedding Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/styles/main.css">
 
@@ -10,10 +11,12 @@
 
     <header>
 
-        <img src="src/assets/images/hedder.png" alt="header Image" class="img-responsive">
-        <h1>Satoshi</h1>
-        <h2>And</h2>
-        <h1>Mari</h1>
+        <div class="name-title">
+            <img src="src/assets/images/hedder.png" alt="header Image" class="img-responsive">
+            <h1>Satoshi</h1>
+            <h2>And</h2>
+            <h1>Mari</h1>
+        </div>
 
         <!-- ハンバーガーメニューのアイコン -->
         <div id="hamburger-menu">
@@ -22,17 +25,16 @@
                 <span></span>
                 <span></span>
             </div>
-            <span id="menu-text">Menu</span>
         </div>
 
 
         <!-- デスクトップ表示の際のメニュー -->
         <nav id="mobile-nav" >
             <a href="#home" class="gold-color">Home</a>
-            <a href="#table">席次表</a>
-            <a href="#album">アルバム</a>
-            <a href="#sydney">シドニー情報</a>
-            <a href="#video">動画</a>
+            <a href="#table">Seats</a>
+            <a href="#album">Album</a>
+            <a href="#sydney">Sydeny information</a>
+            <a href="#video">Movie</a>
         </nav>
 
         <!-- スマホ表示のサイドメニュー -->
@@ -40,10 +42,10 @@
         <div id="sidebar">
             <nav id="mobile-nav-side">
                 <a href="#home" >Home</a>
-                <a href="#table">席次表</a>
-                <a href="#album">アルバム</a>
-                <a href="#sydney">シドニー情報</a>
-                <a href="#video">動画</a>
+                <a href="#table">Seats</a>
+                <a href="#album">Album</a>
+                <a href="#sydney">Sydeny information</a>
+                <a href="#video">Movie</a>
             </nav>
         </div>
         <!-- サイドバー以外の部分を覆う透明なレイヤー -->
@@ -58,15 +60,21 @@
         <div class="top-image">
             <img src="src/assets/images/IMG_7469.jpg" alt="Main Image" class="img-responsive">
         </div>
-        <section id="date">
-            <h2>Please join us for our wedding celebration on</h2>
-            <h3>OCTOBER 24, 2024</h3>
-        </section>
-        <section id="story">
-            <img src="src/assets/images/center.jpg" alt="center Image" class="center-image">
-            <h2>OUR STORY</h2>
-            <p>Cecilia and Oliver met in 2009 during senior year of high school, during an Intro to Photography class. Students were assigned a project that required them to shoot architectural buildings throughout San Francisco. One afternoon, they ran into each other on the street - they were photographing the same building, just from different vantage points! - and decided to shoot together. The afternoon turned to evening and ended with ice cream, where they talked until the shop closed. And the rest, as they say, is history. </p>
-        </section>
+
+        <div class="name-title">
+            <section id="date">
+                <h2>Please join us for our wedding celebration on</h2>
+                <h3>OCTOBER 7, 2023</h3>
+            </section>
+        </div>
+        <div class="name-title">
+            <section id="story">
+                <img src="src/assets/images/center.jpg" alt="center Image" class="center-image">
+                <h2>OUR STORY</h2>
+                <p>Cecilia and Oliver met in 2009 during senior year of high school, during an Intro to Photography class. Students were assigned a project that required them to shoot architectural buildings throughout San Francisco. One afternoon, they ran into each other on the street - they were photographing the same building, just from different vantage points! - and decided to shoot together. The afternoon turned to evening and ended with ice cream, where they talked until the shop closed. And the rest, as they say, is history. </p>
+            </section>
+        </div>
+
     </main>
 
     <footer>

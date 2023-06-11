@@ -13,6 +13,10 @@ header {
     margin: 0 20px 20px 20px auto;
 }
 
+.name-title{
+    font-family: 'Great Vibes', cursive;
+  }
+
 main, footer {
     width: 80%;
     margin: 20px auto;
@@ -79,6 +83,7 @@ footer {
 /* 通常サイズの時にはナビゲーションを表示する */
 #mobile-nav {
     display: block;
+    font-family: 'Great Vibes', cursive;
 }
 
 
@@ -98,10 +103,6 @@ footer {
     background-color: #333;
 }
 
-#hamburger-menu #menu-text {
-    font-size: 18px;
-    color: #333;
-}
 
 /* スマホサイズの時にはナビゲーションを非表示にし、ハンバーガーメニューを表示する */
 @media only screen and (max-width: 768px) {
