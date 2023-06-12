@@ -6,6 +6,7 @@ body {
     font-size: 18px;
     text-align: center;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -13,9 +14,9 @@ header {
     margin: 0 20px 20px 20px auto;
 }
 
-.name-title{
+/* .name-title{
     font-family: 'Great Vibes', cursive;
-  }
+  } */
 
 main, footer {
     width: 80%;
@@ -83,7 +84,7 @@ footer {
 /* 通常サイズの時にはナビゲーションを表示する */
 #mobile-nav {
     display: block;
-    font-family: 'Great Vibes', cursive;
+    /* font-family: 'Great Vibes', cursive; */
 }
 
 
