@@ -6,7 +6,7 @@ body {
     font-size: 18px;
     text-align: center;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Klee One', cursive;
 }
 
 header {
@@ -14,9 +14,14 @@ header {
     margin: 0 20px 20px 20px auto;
 }
 
-/* .name-title{
-    font-family: 'Great Vibes', cursive;
-  } */
+.satomari-title{
+    font-family: "WhiteGardenRegular Regular";
+  }
+
+.name-title{
+    font-family: 'Klee One', cursive;
+
+  }
 
 main, footer {
     width: 80%;
@@ -25,9 +30,14 @@ main, footer {
 }
 
 
+
+
 /* ストーリー */
 #story p {
-    font-size: calc(18px / 5);
+    font-size: 12px;
+}
+.blank-space {
+    height: 20px;  /* または必要なスペースに応じて */
 }
 
 
